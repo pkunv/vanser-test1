@@ -1,0 +1,29 @@
+{
+	"name": "vanser-test",
+	"version": "0.1.0",
+	"description": "Fullstack framework using Van.JS",
+	"type": "module",
+	"scripts": {
+		"build": "npx tsc",
+		"start": "node dist/index.js",
+		"dev": "cross-env NODE_ENV=development nodemon src/server.ts"
+	},
+	"author": "pkunv",
+	"license": "ISC",
+	"devDependencies": {
+		"@types/express": "^4.17.21",
+		"@types/morgan": "^1.9.9",
+		"@types/node": "^22.2.0",
+		"cross-env": "^7.0.3",
+		"nodemon": "^3.1.4",
+		"tsx": "^4.17.0",
+		"typescript": "^5.5.4"
+	},
+	"dependencies": {
+		"express": "^4.19.2",
+		"import-sync": "^2.2.2",
+		"mini-van-plate": "^0.6.0",
+		"morgan": "^1.10.0",
+		"vanjs-core": "^1.5.1"
+	}
+}
