@@ -70,6 +70,7 @@ const directories = readdirSync(appDirectory, { recursive: true })
 await esbuild.build({
 	entryPoints: [".vanser/client.ts"],
 	bundle: true,
+	minify: true,
 	outfile: "dist/client.bundle.min.js",
 })
 
